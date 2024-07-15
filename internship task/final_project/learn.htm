@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shotkit | Reviews Page</title>
+    <style>
+        /* navbar section */
+.nav_section{
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+#main_heading{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 0.56px red;
+    position: sticky;
+    top: 0;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    background-color: black;
+    border-radius: 30px;
+    
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float:left;
+    list-style: none; 
+    margin: 13px 20px;
+    
+}
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 0.56px red;
+}
+.navbar li a:hover{
+    color: rgb(212, 30, 30);
+    color
+}
+/* search box section */
+.search{
+    float: right;
+    color: white;
+    padding: 12px 75px;
+}
+.navbar input{
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 129px;
+}
+
+/* rating section */
+.rating{
+    border: 2px solid black;
+    display: flex;
+    background-color: black;
+}
+
+.rating_section{
+    padding: 23px;
+    justify-content: space-around;
+    color: white;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.rating_section h2{
+    color: yellow;
+}
+
+                /* Gear section */
+.camera_gear{
+    text-align: center;
+}
+
+.browse_gear h2{
+    text-align: center;
+    display: flex;
+}
+
+.gear{
+    border: 2px solid red;
+    margin-right:70% ;
+    margin-left: 10PX;
+}
+
+.lenses{
+    border: 2px solid pink;
+    margin-right:70% ;
+    margin-left: 10PX;
+}
+
+/* bowse all gear */
+.popular_gear h1{
+    text-align: center;
+}
+
+.popular div{
+    display: block;
+    grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+    gap: 15px;
+    height: 300px;
+    width: 250px;
+}
+        /* browse all gear */
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px;
+            background-color: white;
+        }
+
+        #container div{
+            height: 370px;
+            width: 400px;
+            /* border: 1px solid black; */
+            /* background-color: rgb(232, 255, 255); */
+            background-color: whitesmoke;
+            margin: 60px;
+            text-align: center;
+            border-radius: 11px;
+            box-shadow: -1px -1px 10px 3px rgba(71,172,172,0.5);
+        }
+
+
+        /* popular gear reviews card */
+        .card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 2%;
+    }
+
+    #popular{
+        text-align: center;
+        font-size: 35px;
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  
+
+ 
+ }
+
+.title{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+
+h1{
+  font-size: 20px;
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+ 
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+        
+
+    </style>
+</head>
+<body>
+  <!-- Navbar section -->
+  <header>
+      <div class="nav_section">
+          <h1 id="main_heading">SHOTKIT</h1>
+          <nav class="navbar">
+              <ul>
+                  <li><a href="./gear.htm">GEAR</a></li>
+                  <li><a href="./reviews.htm">REVIEWS</a></li>
+                  <li><a href="#">SOFTWARE</a></li>
+                  <li><a href="#">LEARN</a></li>
+                  <li><a href="#">PHOTOGRAPHERS</a></li>
+                  <li><a href="#">NEWS</a></li>
+                  <li><a href="#">SALE</a></li>
+                  <div class="search">
+                      <input type="text" name="search" id="search" placeholder="Search this website">
+                  </div>
+              </ul>
+          </nav>
+      </div>
+  </header>
+                  <!-- front ratting section -->
+  <div class="rating">
+      <div class="rating_section" id="rating1">
+          <h2>The leading authority in photography and camera gear.</h2>
+          <p>Become a better photographer.</p>
+      </div>
+      <div class="rating_section" id="rating2">
+          <h2>12.9 Million</h2>
+          <p>Annual Readers</p>
+      </div>
+      <div class="rating_section" id="rating3">
+          <h2>57,500+</h2>
+          <p>Newsletter Subscribers</p>
+      </div>
+      <div class="rating_section" id="rating4">
+          <h2>1,260+</h2>
+          <p>Featured Photographers</p>
+      </div>
+      <div class="rating_section" id="rating5">
+          <h2>
+              <h2>2,360+</h2>
+              <p>Photography Guides & Gear Reviews</p>
+          </h2>
+      </div>
+  </div>
+ 
+    <div id="container">
+        <div>
+            <h2>Cameras</h2>
+            <p><a href="">Sony</a></p>
+            <p><a href="">Canon</a></p>
+            <p><a href="">Fujifilm</a></p>
+            <p><a href="">Nikon</a></p>
+            <p><a href="">Olympus</a></p>
+            <p><a href="">Other Brands</a></p>
+        </div>
+        <div>
+            <h2>Lenses</h2>
+            <p><a href="">Canon</a></p>
+            <p><a href="">Fujifilm</a></p>
+            <p><a href="">Nikon</a></p>
+            <p><a href="">Olympus</a></p>
+            <p><a href="">Panasonic</a></p>
+            <p><a href="">Rokinon/Samyang</a></p>
+            <p><a href="">Sigma</a></p>
+        </div>
+        <div> 
+            <h2>Bags</h2>
+            <p><a href="">Peak Design</a></p>
+            <p><a href="">Think Tank</a></p>
+            <p><a href="">Wandrd</a></p>
+            <p><a href="">Wotancraft</a></p>
+            <p><a href="">Mind Shift</a></p>
+            <p><a href="">Langly</a></p>
+            <p><a href="">f-stop</a></p>
+        </div>
+        <div>
+            <h2>Other Gear</h2>
+            <p><a href="">Drones</a></p>
+            <p><a href="">Lighting</a></p>
+            <p><a href="">Microphones</a></p>
+            <p><a href="">Tripods</a></p>
+            <!-- <p><a href=""></a></p>
+            <p><a href=""></a></p> -->
+        </div>
+    </div>
+<!-- popular gear reviews -->
+<div class="popular_reviews">
+        <!--cards -->
+    <h1 id="popular">Popular Gear Reviews</h1>
+    <div class="card">
+
+        <div class="image">
+        <img src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/nikon-26mm-shotkit-review0001-landscape-e1e57fe1d8f6ecedad2d87f57468dc24-zybravgx2q47.jpg">
+        </div>
+        <div class="title">
+        </div>
+        <div class="des">
+        <p>You can Add Desccription Here...</p>
+        <a href=""><button>click here</button></a>
+        </div>
+        </div>
+        <!--cards -->
+        
+        
+        <div class="card">
+        
+        <div class="image">
+        <img src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/Peak-Design-Travel-Tripod-Review-landscape-05508a6c8b9220dde241755da2059a07-zybravgx2q47.jpg">
+        </div>
+        <div class="title">
+        </div>
+        <div class="des">
+        <p>You can Add Desccription Here...</p>
+        <a href=""><button>click here</button></a>
+        </div>
+        </div>
+        <!--cards -->
+        
+        
+        <div class="card">
+        
+        <div class="image">
+        <img src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/Fujifilm-x100V-review-8-landscape-278ac0bddf15a4d366601a54f255f6d8-zybravgx2q47.jpg">
+        </div>
+        <div class="title">
+        </div>
+        <div class="des">
+        <p>You can Add Desccription Here...</p>
+        <a href=""><button>click here</button></a>
+        </div>
+        </div>
+        <!--cards -->
+        
+        
+        <div class="card">
+        
+        <div class="image">
+        <img src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/Nikon_35mm_1.8_reiew_Shotkit_36-landscape-9f7a92a6ed2a1e616ace08654472f6ba-zybravgx2q47.jpg">
+        </div>
+        <div class="title">
+        </div>
+        <div class="des">
+        <p>NIKON 26MM F/2.8 LENS REVIEW – A DREAM FOR TRAVEL</p>
+        <a href=""><button>click here</button></a>
+        </div>
+    </div>
+</div>
+
+<!-- Recent Gear Reviews -->
+ <!-- recent-1 -->
+<div class="recent_reviews">
+            <!--cards -->
+            <h1 id="popular">Recent Gear Reviews</h1>
+            <div class="card">
+        
+                <div class="image">
+                <img src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/nikon-26mm-shotkit-review0001-landscape-e1e57fe1d8f6ecedad2d87f57468dc24-zybravgx2q47.jpg">
+                </div>
+                <div class="title">
+                </div>
+                <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <a href=""><button>click here</button></a>
+                </div>
+                </div>
+                <!--cards -->
+                
+                
+                <div class="card">
+                
+                <div class="image">
+                <img src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/Peak-Design-Travel-Tripod-Review-landscape-05508a6c8b9220dde241755da2059a07-zybravgx2q47.jpg">
+                </div>
+                <div class="title">
+                </div>
+                <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <a href=""><button>click here</button></a>
+                </div>
+                </div>
+                <!--cards -->
+                
+                
+                <div class="card">
+                
+                <div class="image">
+                <img src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/Fujifilm-x100V-review-8-landscape-278ac0bddf15a4d366601a54f255f6d8-zybravgx2q47.jpg">
+                </div>
+                <div class="title">
+                </div>
+                <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <a href=""><button>click here</button></a>
+                </div>
+                </div>
+                <!--cards -->
+                
+                
+                <div class="card">
+                
+                <div class="image">
+                <img src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/Nikon_35mm_1.8_reiew_Shotkit_36-landscape-9f7a92a6ed2a1e616ace08654472f6ba-zybravgx2q47.jpg">
+                </div>
+                <div class="title">
+                </div>
+                <div class="des">
+                <p>NIKON 26MM F/2.8 LENS REVIEW – A DREAM FOR TRAVEL</p>
+                <a href=""><button>click here</button></a>
+                </div>
+            </div>
+
+                    <!--cards -->
+<!-- recent 2 -->
+    <div class="card">
+
+        <div class="image">
+        <img src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/nikon-26mm-shotkit-review0001-landscape-e1e57fe1d8f6ecedad2d87f57468dc24-zybravgx2q47.jpg">
+        </div>
+        <div class="title">
+        </div>
+        <div class="des">
+        <p>You can Add Desccription Here...</p>
+        <a href=""><button>click here</button></a>
+        </div>
+        </div>
+        <!--cards -->
+        
+        
+        <div class="card">
+        
+        <div class="image">
+        <img src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/Peak-Design-Travel-Tripod-Review-landscape-05508a6c8b9220dde241755da2059a07-zybravgx2q47.jpg">
+        </div>
+        <div class="title">
+        </div>
+        <div class="des">
+        <p>You can Add Desccription Here...</p>
+        <a href=""><button>click here</button></a>
+        </div>
+        </div>
+        <!--cards -->
+        
+        
+        <div class="card">
+        
+        <div class="image">
+        <img src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/Fujifilm-x100V-review-8-landscape-278ac0bddf15a4d366601a54f255f6d8-zybravgx2q47.jpg">
+        </div>
+        <div class="title">
+        </div>
+        <div class="des">
+        <p>You can Add Desccription Here...</p>
+        <a href=""><button>click here</button></a>
+        </div>
+        </div>
+        <!--cards -->
+        
+        
+        <div class="card">
+        
+        <div class="image">
+        <img src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/Nikon_35mm_1.8_reiew_Shotkit_36-landscape-9f7a92a6ed2a1e616ace08654472f6ba-zybravgx2q47.jpg">
+        </div>
+        <div class="title">
+        </div>
+        <div class="des">
+        <p>NIKON 26MM F/2.8 LENS REVIEW – A DREAM FOR TRAVEL</p>
+        <a href=""><button>click here</button></a>
+        </div>
+    </div>
+
+            <!--cards -->
+             <!-- recent-3 -->
+            <div class="card">
+        
+                <div class="image">
+                <img src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/nikon-26mm-shotkit-review0001-landscape-e1e57fe1d8f6ecedad2d87f57468dc24-zybravgx2q47.jpg">
+                </div>
+                <div class="title">
+                </div>
+                <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <a href=""><button>click here</button></a>
+                </div>
+                </div>
+                <!--cards -->
+                
+                
+                <div class="card">
+                
+                <div class="image">
+                <img src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/Peak-Design-Travel-Tripod-Review-landscape-05508a6c8b9220dde241755da2059a07-zybravgx2q47.jpg">
+                </div>
+                <div class="title">
+                </div>
+                <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <a href=""><button>click here</button></a>
+                </div>
+                </div>
+                <!--cards -->
+                
+                
+                <div class="card">
+                
+                <div class="image">
+                <img src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/Fujifilm-x100V-review-8-landscape-278ac0bddf15a4d366601a54f255f6d8-zybravgx2q47.jpg">
+                </div>
+                <div class="title">
+                </div>
+                <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <a href=""><button>click here</button></a>
+                </div>
+                </div>
+                <!--cards -->
+                
+                
+                <div class="card">
+                
+                <div class="image">
+                <img src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/Nikon_35mm_1.8_reiew_Shotkit_36-landscape-9f7a92a6ed2a1e616ace08654472f6ba-zybravgx2q47.jpg">
+                </div>
+                <div class="title">
+                </div>
+                <div class="des">
+                <p>NIKON 26MM F/2.8 LENS REVIEW – A DREAM FOR TRAVEL</p>
+                <a href=""><button>click here</button></a>
+                </div>
+            </div>
+</div>
+<!-- </div> -->
+</body>
+</html>

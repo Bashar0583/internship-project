@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Spot On Sepia | photography section</title>
+      <!-- <link rel="stylesheet" href="style.css"> -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 3px 11px;
+  border-radius:25px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* content section */
+h2{
+    text-align: center;
+    position: sticky;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    background: #f2f2f2;
+    overflow: auto;
+}
+
+.gallery{
+    margin: 5px;
+    border: 1px solid red;
+    float: left;
+    width: 390px;
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+
+.desc{
+    padding: 15px;
+    text-align: center;
+}
+
+/* card section */
+.card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 2%;
+    }
+
+    #popular{
+        text-align: center;
+        font-size: 35px;
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  
+
+ 
+ }
+
+.title{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+
+h1{
+  font-size: 20px;
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+ 
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+
+</style>
+   </head>
+   <body>
+    <!-- navbar section -->
+      <nav>
+         <div class="logo">
+            Spot On Sepia | photography
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a href="./photographers.htm">Home</a></li>
+            <li><a href="#">All photo</a></li>
+            <li><a href="#">Family Photo</a></li>
+            <li><a href="#">Child Photo</a></li>
+            <li><a href="#">Visited Places</a></li>
+            <li><a href="#">Feedback</a></li>
+         </ul>
+      </nav>
+      <!-- content section(image) -->
+
+        <!-- family photo cards -->
+        <h2>Family photo</h2>
+        <div class="card">
+        
+            <div class="image">
+            <img src="http://media4.s-nbcnews.com/i/newscms/2015_34/744661/family-having-fun-tease-today-150821_34ed5bf7adf6c3ddc43fe55d1fa9f44f.jpg">
+            </div>
+            <div class="title"><a target="_blank" href="http://media4.s-nbcnews.com/i/newscms/2015_34/744661/family-having-fun-tease-today-150821_34ed5bf7adf6c3ddc43fe55d1fa9f44f.jpg">Download</a>
+            </div>
+        </div>
+
+        <!--cards -->
+        <div class="card">
+        
+            <div class="image">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.GGn_vJgkdJlPuBdDmJhYiAHaE7&pid=Api&P=0&h=180">
+            </div>
+            <div class="title"><a target="_blank" href="https://tse2.mm.bing.net/th?id=OIP.GGn_vJgkdJlPuBdDmJhYiAHaE7&pid=Api&P=0&h=180">Download</a>
+            </div>
+        </div>
+
+        <!--cards -->
+        <div class="card">
+        
+            <div class="image">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.zBmzxw1ps8L5uPD83eO9MwHaEs&pid=Api&P=0&h=180">
+            </div>
+            <div class="title"><a target="_blank" href="https://tse4.mm.bing.net/th?id=OIP.zBmzxw1ps8L5uPD83eO9MwHaEs&pid=Api&P=0&h=180">Download</a>
+            </div>
+        </div>
+
+        <!--cards -->
+        <div class="card">
+        
+            <div class="image">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.U0rCaaDoVTbOWtj-75VP0QHaE7&pid=Api&P=0&h=180">
+            </div>
+            <div class="title"><a target="_blank" href="https://tse1.mm.bing.net/th?id=OIP.U0rCaaDoVTbOWtj-75VP0QHaE7&pid=Api&P=0&h=180">Download</a>
+            </div>
+        </div>
+
+        <!--cards -->
+        <div class="card">
+        
+            <div class="image">
+            <img src="https://wallpapercave.com/wp/wp4845712.jpg">
+            </div>
+            <div class="title"><a target="_blank" href="https://wallpapercave.com/wp/wp4845712.jpg">Download</a>
+            </div>
+        </div>
+
+        <!--cards -->
+        <div class="card">
+        
+            <div class="image">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.JGk9-nkiltljKieNdEiObgHaDt&pid=Api&P=0&h=180">
+            </div>
+            <div class="title"><a target="_blank" href="https://tse3.mm.bing.net/th?id=OIP.JGk9-nkiltljKieNdEiObgHaDt&pid=Api&P=0&h=180">Download</a>
+            </div>
+        </div>
+        <!-- family photo cards -->
+         <h2>Child Photo</h2>
+
+         <!--cards -->
+        <div class="card">
+        
+            <div class="image">
+            <img src="https://images.pexels.com/photos/5560466/pexels-photo-5560466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+            </div>
+            <div class="title"><a target="_blank" href="https://images.pexels.com/photos/5560466/pexels-photo-5560466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">Download</a>
+            </div>
+        </div>
+
+         <!--cards -->
+         <div class="card">
+        
+            <div class="image">
+            <img src="https://images.pexels.com/photos/5560472/pexels-photo-5560472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+            </div>
+            <div class="title"><a target="_blank" href="https://images.pexels.com/photos/5560472/pexels-photo-5560472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">Download</a>
+            </div>
+        </div>
+
+         <!--cards -->
+         <div class="card">
+        
+            <div class="image">
+            <img src="https://images.pexels.com/photos/5622358/pexels-photo-5622358.jpeg?auto=compress&cs=tinysrgb&w=600">
+            </div>
+            <div class="title"><a target="_blank" href="https://images.pexels.com/photos/5622358/pexels-photo-5622358.jpeg?auto=compress&cs=tinysrgb&w=600">Download</a>
+            </div>
+        </div>
+
+         <!--cards -->
+         <div class="card">
+        
+            <div class="image">
+            <img src="https://images.pexels.com/photos/4602507/pexels-photo-4602507.jpeg?auto=compress&cs=tinysrgb&w=600">
+            </div>
+            <div class="title"><a target="_blank" href="https://images.pexels.com/photos/4602507/pexels-photo-4602507.jpeg?auto=compress&cs=tinysrgb&w=600">Download</a>
+            </div>
+        </div>
+
+         <!--cards -->
+         <div class="card">
+        
+            <div class="image">
+            <img src="https://images.pexels.com/photos/3771510/pexels-photo-3771510.jpeg?auto=compress&cs=tinysrgb&w=600">
+            </div>
+            <div class="title"><a target="_blank" href="https://images.pexels.com/photos/3771510/pexels-photo-3771510.jpeg?auto=compress&cs=tinysrgb&w=600">Download</a>
+            </div>
+        </div>
+
+        <!-- Visited place cards -->
+        <h2>Visited places photo</h2>
+
+        <!--cards -->
+        <div class="card">
+        
+            <div class="image">
+            <img src="https://regal-holidays.net/wp-content/uploads/2019/06/red-fort-lal-qila-delhi-india.jpg">
+            </div>
+            <div class="title"><a target="_blank" href="https://regal-holidays.net/wp-content/uploads/2019/06/red-fort-lal-qila-delhi-india.jpg">Download</a>
+            </div>
+        </div>
+
+        
+        <!--cards -->
+        <div class="card">
+        
+            <div class="image">
+            <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-agra.jpg">
+            </div>
+            <div class="title"><a target="_blank" href="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-agra.jpg">Download</a>
+            </div>
+        </div>
+
+
+        
+        <!--cards -->
+        <div class="card">
+        
+            <div class="image">
+            <img src="https://manuu.edu.in/sites/default/files/2023-05/Admin%20Building.jpg">
+            </div>
+            <div class="title"><a target="_blank" href="https://manuu.edu.in/sites/default/files/2023-05/Admin%20Building.jpg">Download</a>
+            </div>
+        </div>
+
+
+        
+        <!--cards -->
+        <div class="card">
+        
+            <div class="image">
+            <img src="https://www.mistay.in/travel-blog/content/images/2020/07/travel-4813658_1920.jpg">
+            </div>
+            <div class="title"><a target="_blank" href="https://www.mistay.in/travel-blog/content/images/2020/07/travel-4813658_1920.jpg">Download</a>
+            </div>
+        </div>
+
+
+
+
+
+
+   </body>
+</html>

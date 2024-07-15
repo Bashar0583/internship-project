@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* navbar section */
+.nav_section{
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+#main_heading{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 0.56px red;
+    position: sticky;
+    top: 0;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    background-color: black;
+    border-radius: 30px;
+    
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float:left;
+    list-style: none; 
+    margin: 13px 20px;
+    
+}
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 0.56px red;
+}
+.navbar li a:hover{
+    color: rgb(212, 30, 30);
+    color
+}
+/* search box section */
+.search{
+    float: right;
+    color: white;
+    padding: 12px 75px;
+}
+.navbar input{
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 129px;
+}
+
+/* rating section */
+.rating{
+    border: 2px solid black;
+    display: flex;
+    background-color: black;
+}
+
+.rating_section{
+    padding: 23px;
+    justify-content: space-around;
+    color: white;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.rating_section h2{
+    color: yellow;
+}
+
+                /* Gear section */
+.camera_gear{
+    text-align: center;
+}
+
+.browse_gear h2{
+    text-align: center;
+    display: flex;
+}
+
+.gear{
+    border: 2px solid red;
+    margin-right:70% ;
+    margin-left: 10PX;
+}
+
+.lenses{
+    border: 2px solid pink;
+    margin-right:70% ;
+    margin-left: 10PX;
+}
+
+/* bowse all gear */
+.popular_gear h1{
+    text-align: center;
+}
+
+.popular div{
+    display: block;
+    grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+    gap: 15px;
+    height: 300px;
+    width: 250px;
+}
+
+/* .popular1{
+    border: 2px solid red;
+    /* height: 250px;
+    width: 200px; */
+} */
